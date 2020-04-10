@@ -202,7 +202,7 @@
         var UrlReg = "^((http|https|thunder|qqdl|ed2k|Flashget|qbrowser|ftp|rtsp|mms)://)";
         if (jump_url == null || jump_url.toString().length < 1 || !jump_url.match(UrlReg)) {
             document.title = "Invalid Arguments, go to homepage...";
-            jump_url = location.origin;
+            jump_url = "https://blog.holger.net.cn";
         }
         setTimeout(function link_jump() {
             location.href = jump_url;
